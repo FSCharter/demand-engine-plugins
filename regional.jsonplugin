@@ -1,0 +1,13 @@
+// Id: regional
+// Name: Regional
+// Weight: 200
+{
+    "commodityType": "passenger",
+    "passengerCountMinimum": 1,
+    "passengerCountMaximum": 4,
+    "originAirportType": [ "large", "medium" ],
+    "sameCountry": "true",
+    "destinationAirportType": [ "large", "medium" ],
+    "minimumDistance": 75,
+    "passengerClass": ["economy", "first", "business"]
+}

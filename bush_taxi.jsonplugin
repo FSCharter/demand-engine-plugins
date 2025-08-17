@@ -1,0 +1,24 @@
+// Id: bush_taxi
+// Name: Bush Taxi
+// Weight: 20
+{
+    "commodityType": "passenger",
+    "passengerCountMinimum": 1,
+    "passengerCountMaximum": 2,
+    "originAirportType": "small",
+    "destinationAirportType": "small",
+    "minimumDistance": 5,
+    "maximumDistance": 30,
+    "passengerClass": "economy",
+    "originMaximumHardRunways": 0,
+    "originMaximumWaterRunways": 0,
+    "originMaximumHelipads": 0,
+    "originMinimumSoftRunways": 1,
+    "destinationMaximumHardRunways": 0,
+    "destinationMaximumWaterRunways": 0,
+    "destinationMaximumHelipads": 0,
+    "destinationMinimumSoftRunways": 1,
+    "originCountry": [ "US", "CA", "PG", "ID", "AU", "NZ", "ZA" ],
+    "destinationCountry": [ "US", "CA", "PG", "ID", "AU", "NZ", "ZA" ],
+    "sameCountry": true
+}

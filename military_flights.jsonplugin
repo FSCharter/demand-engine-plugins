@@ -1,0 +1,12 @@
+// Id: military_flights
+// Name: Military Flights
+// Weight: 60
+{
+    "commodityType": "passenger",
+    "passengerCountMinimum": 1,
+    "passengerCountMaximum": 6,
+    "minimumDistance": 50,
+    "maximumDistance": 6000,
+    "enforceMilitaryOrigin": true,
+    "enforceMilitaryDestination": true
+}

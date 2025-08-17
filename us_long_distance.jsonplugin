@@ -1,0 +1,14 @@
+// Id: us_long_distance
+// Name: US Long Distance
+// Weight: 150
+{
+    "commodityType": "passenger",
+    "passengerCountMinimum": 1,
+    "passengerCountMaximum": 5,
+    "originAirportType": "large",
+    "originCountry": "US",
+    "destinationAirportType": "large",
+    "destinationCountry": "US",
+    "minimumDistance": 500,
+    "passengerClass": ["economy", "first", "business"]
+}

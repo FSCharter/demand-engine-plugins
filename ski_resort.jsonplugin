@@ -1,0 +1,17 @@
+// Id: ski_resort
+// Name: Ski Resort Shuttle
+// Weight: 30
+{
+    "commodityType": "passenger",
+    "passengerCountMinimum": 2,
+    "passengerCountMaximum": 8,
+    "originAirportType": ["large", "medium"],
+    "destinationAirportType": "small",
+    "minimumDistance": 50,
+    "maximumDistance": 300,
+    "passengerClass": ["economy", "business"],
+    "originCountry": ["US", "CA", "FR", "CH", "AT", "IT", "JP"],
+    "destinationCountry": ["US", "CA", "FR", "CH", "AT", "IT", "JP"],
+    "sameCountry": true,
+    "pluginCommodityLimit": 40
+}

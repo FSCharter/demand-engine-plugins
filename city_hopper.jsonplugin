@@ -1,0 +1,13 @@
+// Id: city_hopper
+// Name: City Hopper
+// Weight: 100
+{
+    "commodityType": "passenger",
+    "passengerCountMinimum": 1,
+    "passengerCountMaximum": 3,
+    "originAirportType": "medium",
+    "destinationAirportType": "medium",
+    "minimumDistance": 30,
+    "maximumDistance": 150,
+    "passengerClass": ["economy", "first", "business"]
+}

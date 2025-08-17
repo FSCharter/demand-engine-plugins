@@ -1,0 +1,12 @@
+// Id: local_airfield
+// Name: Local Airfield
+// Weight: 80
+{
+    "commodityType": "passenger",
+    "passengerCountMinimum": 1,
+    "passengerCountMaximum": 2,
+    "originAirportType": "small",
+    "destinationAirportType": "small",
+    "minimumDistance": 10,
+    "maximumDistance": 50
+}

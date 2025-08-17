@@ -1,0 +1,12 @@
+// Id: worlds_longest
+// Name: World's Longest Flight
+// Weight: 5
+{
+    "commodityType": "passenger",
+    "passengerCountMinimum": 1,
+    "passengerCountMaximum": 6,
+    "originIcao": ["WSSS", "KEWR"],
+    "destinationIcao": ["WSSS", "KEWR"],
+    "passengerClass": ["economy", "first", "business"],
+    "pluginCommodityLimit": 20
+}

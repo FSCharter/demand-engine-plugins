@@ -1,0 +1,11 @@
+// Id: real_world
+// Name: Real World Routes
+// Weight: 300
+{
+    "commodityType": "passenger",
+    "passengerCountMinimum": 1,
+    "passengerCountMaximum": 5,
+    "originAirportRealWorld": true,
+    "destinationAirportRealWorld": true,
+    "passengerClass": ["economy", "first", "business"]
+}

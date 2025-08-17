@@ -1,0 +1,14 @@
+// Id: international
+// Name: International
+// Weight: 200
+
+{
+    "commodityType": "passenger",
+    "passengerCountMinimum": 1,
+    "passengerCountMaximum": 5,
+    "originAirportType": "large",
+    "destinationAirportType": "large",
+    "minimumDistance": 300,
+    "sameCountry": false,
+    "passengerClass": ["economy", "first", "business"]
+}

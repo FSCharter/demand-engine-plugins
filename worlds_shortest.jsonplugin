@@ -1,0 +1,12 @@
+// Id: worlds_shortest
+// Name: World's Shortest Flight
+// Weight: 5
+{
+    "commodityType": "passenger",
+    "passengerCountMinimum": 1,
+    "passengerCountMaximum": 2,
+    "originIcao": ["EGEW", "EGEP"],
+    "destinationIcao": ["EGEW", "EGEP"],
+    "passengerClass": ["economy", "first", "business"],
+    "pluginCommodityLimit": 20
+}

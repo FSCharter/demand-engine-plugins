@@ -1,0 +1,14 @@
+// Id: airbus_shuttle
+// Name: Airbus Shuttle
+// Weight: 10
+{
+    "commodityType": "passenger",
+    "passengerCountMinimum": 1,
+    "passengerCountMaximum": 4,
+    "passengerClass": ["economy", "first", "business"],
+    "originIcao": "LFBO",
+    "destinationIcao": "EDHI",
+    "randomNextHop": ["LFBO", "EDHI", "ZBTJ", "KBFM"],
+    "pluginCommodityLimit": 10,
+    "timeToLive": 5
+}

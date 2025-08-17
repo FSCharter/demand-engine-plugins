@@ -1,0 +1,12 @@
+// Id: military_transfers
+// Name: Military Transfers
+// Weight: 60
+{
+    "commodityType": "passenger",
+    "passengerCountMinimum": 1,
+    "passengerCountMaximum": 6,
+    "minimumDistance": 50,
+    "maximumDistance": 250,
+    "enforceMilitaryOrigin": false,
+    "enforceMilitaryDestination": true
+}

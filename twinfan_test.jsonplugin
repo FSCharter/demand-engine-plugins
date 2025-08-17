@@ -1,0 +1,12 @@
+// Id: twinfan_test
+// Name: Twinfan Test Flights
+// Weight: 10
+{
+    "commodityType": "passenger",
+    "passengerCountMinimum": 1,
+    "passengerCountMaximum": 2,
+    "originIcao": ["EDDL", "EDLE"],
+    "destinationIcao": ["EDDL", "EDLE"],
+    "passengerClass": "economy",
+    "pluginCommodityLimit": 30
+}
