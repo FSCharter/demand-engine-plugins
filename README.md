@@ -62,7 +62,7 @@ The list of parameters affecting completion filters can be found in [Completion 
 
 ### Detailed Example ###
 
-Here is an example of a larger, more complete exaqmple taken from the Island Hopper plugin:
+Here is an example of a larger, more complete example taken from the Island Hopper plugin:
 
 ```
 // Id: island_hopper
