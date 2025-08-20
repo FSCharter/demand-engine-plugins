@@ -58,3 +58,48 @@ completion filters are able to take this original group and turn it into additio
 available to each completion filter to reference attributes like the routing, passenger information, etc. when creating any additional demand.
 
 The list of parameters affecting completion filters can be found in [Completion Filters](/Docs/CompletionFilters.md).
+
+
+### Detailed Example ###
+
+Here is an example of a larger, more complete exaqmple taken from the Island Hopper plugin:
+
+```
+// Id: island_hopper
+// Name: Island Hopping Service
+// Weight: 40
+{
+    "commodityType": "passenger",
+    "passengerCountMinimum": 2,
+    "passengerCountMaximum": 6,
+    "originMaximumWaterRunways": 0,
+    "originMinimumHardRunways": 1,
+    "destinationMaximumWaterRunways": 0,
+    "destinationMinimumHardRunways": 1,
+    "minimumDistance": 20,
+    "maximumDistance": 150,
+    "passengerClass": "economy",
+    "originCountry": ["PH", "ID", "JP", "GR", "HR", "FJ", "MH"],
+    "destinationCountry": ["PH", "ID", "JP", "GR", "HR", "FJ", "MH"],
+    "sameCountry": true,
+    "randomNextHop": true,
+    "timeToLive": 3
+}
+```
+
+This results in the following limitations on the generation:
+
+- The commodity group has the commodity type passenger, this information is used by the both the Demand Engine and the FSCharter platform in many areas
+- The number of passengers will be randomly chosen to be between two and six people
+- The chosen origin airport must have no water runways
+- The chosen origin airport must have at least one hard runway
+- The chosen destination airport must have no water runways
+- The chosen destination airport must have at least one hard runway
+- The distance between departure and arrival airport must be between 20nm and 150nm
+- The passenger group will be fixed at economy class
+- The origin country will be restricted to those listed
+- The destination country will be restricted to those listed
+- The origin and destination must be within the same country (technically making the destination country restriction above not required)
+- On completion of the initial group a follow-on group will be created starting at the destination airport, using the same parameters and the
+  same passenger names. This will happen a maximum of three times only, after which no more follow-up groups will be created.
+  
