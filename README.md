@@ -14,10 +14,10 @@ such as cargo and so commodity is used generically.
 ## Plugin Format ##
 
 The features of the Demand Engine are driven by a combination of generation and completion filters.
-Plugin files contain a fixed header use by the plugin loader followed by a [JSON](https://en.wikipedia.org/wiki/JSON) formatted object whose key-value pairs
+Plugin files contain a fixed header used by the plugin loader, followed by a [JSON](https://en.wikipedia.org/wiki/JSON) formatted object whose key-value pairs
 change the behaviour of these filters.
 
-Each tick of the engine uses a weighted random algorithm to select a plugin for this tick based on the relative weight of each plugin. Generation then begins with a
+Each tick of the engine uses a weighted random algorithm to select a plugin for this tick, based on the relative weight of each plugin. Generation then begins with a
 blank generation request and without any further adjustment will result in a group being generated between two random airports anywhere
 in the world.  Any deviation from this is the result of plugin parameters.
 
@@ -100,6 +100,6 @@ This results in the following limitations on the generation:
 - The origin country will be restricted to those listed
 - The destination country will be restricted to those listed
 - The origin and destination must be within the same country (technically making the destination country restriction above not required)
-- On completion of the initial group a follow-on group will be created starting at the destination airport, using the same parameters and the
+- On completion of the group a follow-on group will be created starting at the destination airport, using the same parameters and the
   same passenger names. This will happen a maximum of three times only, after which no more follow-up groups will be created.
   
