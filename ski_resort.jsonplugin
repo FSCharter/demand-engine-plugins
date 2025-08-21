@@ -4,7 +4,7 @@
 {
     "commodityType": "passenger",
     "passengerCountMinimum": 2,
-    "passengerCountMaximum": 8,
+    "passengerCountMaximum": 6,
     "originAirportType": ["large", "medium"],
     "destinationAirportType": "small",
     "minimumDistance": 50,
