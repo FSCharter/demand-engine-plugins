@@ -5,7 +5,7 @@
     "commodityType": "passenger",
     "originHasCorporateUse": true,
     "destinationHasCorporateUse": true,
-    "passengerCountMinimum": 1,
+    "passengerCountMinimum": 5,
     "passengerCountMaximum": 8,
     "minimumDistance": 100,
     "maximumDistance": 1000,
