@@ -11,5 +11,5 @@
     "maximumDistance": 2000,
     "passengerClass": ["first"]
     "customMetadata": {
-        "multiplier": 1.7,}
+        "multiplier": 1.7,
 }
