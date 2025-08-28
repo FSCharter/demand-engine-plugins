@@ -1,0 +1,15 @@
+// Id: corporate up to 19
+// Name: Corporate Airports
+// Weight: 80
+{
+    "commodityType": "passenger",
+    "originHasCorporateUse": true,
+    "destinationHasCorporateUse": true,
+    "passengerCountMinimum": 1,
+    "passengerCountMaximum": 19,
+    "minimumDistance": 100,
+    "maximumDistance": 2000,
+    "passengerClass": ["first"]
+    "customMetadata": {
+        "multiplier": 1.7,}
+}

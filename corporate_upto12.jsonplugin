@@ -1,4 +1,4 @@
-// Id: corporate
+// Id: corporate up to 12
 // Name: Corporate Airports
 // Weight: 80
 {
@@ -6,8 +6,10 @@
     "originHasCorporateUse": true,
     "destinationHasCorporateUse": true,
     "passengerCountMinimum": 1,
-    "passengerCountMaximum": 6,
+    "passengerCountMaximum": 12,
     "minimumDistance": 100,
-    "maximumDistance": 1500,
+    "maximumDistance": 2000,
     "passengerClass": ["first"]
+    "customMetadata": {
+        "multiplier": 1.7,}
 }
