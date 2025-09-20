@@ -1,0 +1,12 @@
+// Id: cargo_standard
+// Name: Basic Cargo Flights
+// Weight: 300
+{
+    "commodityType": "cargo",
+    "cargoUnitCountMinimum": 10,
+    "cargoUnitCountMaximum": 75,
+    "cargoClass": "standard",
+    "originAirportType": [ "large", "medium" ],
+    "destinationAirportType": [ "large", "medium" ],
+    "minimumDistance": 100
+}
