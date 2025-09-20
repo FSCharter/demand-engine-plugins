@@ -6,6 +6,7 @@
     "cargoUnitCountMinimum": 10,
     "cargoUnitCountMaximum": 75,
     "cargoClass": "standard",
+    "cargoDescription": "Hold Cargo",
     "originAirportType": [ "large", "medium" ],
     "destinationAirportType": [ "large", "medium" ],
     "minimumDistance": 100
