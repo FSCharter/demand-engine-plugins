@@ -1,6 +1,6 @@
 // Id: airbus_shuttle
 // Name: Airbus Shuttle
-// Weight: 10
+// Weight: 0 [DISABLED]
 {
     "commodityType": "passenger",
     "passengerCountMinimum": 1,

@@ -1,7 +1,6 @@
 // Id: international
 // Name: International
-// Weight: 200
-
+// Weight: 0 [DISABLED]
 {
     "commodityType": "passenger",
     "passengerCountMinimum": 1,

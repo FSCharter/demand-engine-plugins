@@ -1,0 +1,12 @@
+// Id: metropolitan
+// Name: Metropolitan Network
+// Weight: 500
+{
+    "commodityType": "passenger",
+    "passengerCountMinimum": 1,
+    "passengerCountMaximum": 6,
+    "originAirportType": ["large", "medium", "small"],
+    "destinationAirportType": ["large", "medium", "small"],
+    "minimumDistance": 50,
+    "passengerClass": ["economy", "first", "business"]
+}
