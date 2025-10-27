@@ -1,0 +1,15 @@
+// Id: metropolitan
+// Name: Metropolitan Network
+// Weight: 500
+// Unified plugin replacing international/regional/national/real_world
+// Enables suck/blow radius collaboration by allowing all airport types
+// Geoscores provide natural selection weighting (large airports still dominant)
+{
+    "commodityType": "passenger",
+    "passengerCountMinimum": 1,
+    "passengerCountMaximum": 6,
+    "originAirportType": ["large", "medium", "small"],
+    "destinationAirportType": ["large", "medium", "small"],
+    "minimumDistance": 50,
+    "passengerClass": ["economy", "first", "business"]
+}

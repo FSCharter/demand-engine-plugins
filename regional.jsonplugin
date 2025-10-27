@@ -1,6 +1,7 @@
 // Id: regional
 // Name: Regional
-// Weight: 200
+// Weight: 0
+// [DISABLED] Replaced by metropolitan plugin - type restrictions conflict with suck/blow radius
 {
     "commodityType": "passenger",
     "passengerCountMinimum": 1,

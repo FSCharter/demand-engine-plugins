@@ -1,6 +1,7 @@
 // Id: real_world
 // Name: Real World Routes
-// Weight: 300
+// Weight: 0
+// [DISABLED] Replaced by metropolitan plugin - uses static historical data instead of dynamic geoscores
 {
     "commodityType": "passenger",
     "passengerCountMinimum": 1,
