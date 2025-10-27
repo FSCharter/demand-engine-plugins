@@ -1,6 +1,6 @@
 // Id: military_transfers
 // Name: Military Transfers
-// Weight: 60
+// Weight: 25
 {
     "commodityType": "passenger",
     "passengerCountMinimum": 1,

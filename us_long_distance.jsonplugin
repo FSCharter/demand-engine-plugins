@@ -1,6 +1,6 @@
 // Id: us_long_distance
 // Name: US Long Distance
-// Weight: 150
+// Weight: 0 [DISABLED]
 {
     "commodityType": "passenger",
     "passengerCountMinimum": 1,
