@@ -1,6 +1,6 @@
 // Id: worlds_shortest
 // Name: World's Shortest Flight
-// Weight: 5
+// Weight: 0 [DISABLED]
 {
     "commodityType": "passenger",
     "passengerCountMinimum": 1,

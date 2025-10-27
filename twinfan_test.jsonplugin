@@ -1,6 +1,6 @@
 // Id: twinfan_test
 // Name: Twinfan Test Flights
-// Weight: 10
+// Weight: 0 [DISABLED]
 {
     "commodityType": "passenger",
     "passengerCountMinimum": 1,

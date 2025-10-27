@@ -1,6 +1,6 @@
 // Id: worlds_longest
 // Name: World's Longest Flight
-// Weight: 5
+// Weight: 0 [DISABLED]
 {
     "commodityType": "passenger",
     "passengerCountMinimum": 1,
