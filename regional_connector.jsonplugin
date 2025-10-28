@@ -6,6 +6,6 @@
     "passengerCountMinimum": 2,
     "passengerCountMaximum": 8,
     "minimumDistance": 100,
-    "maximumDistance": 400,
+    "maximumDistance": 600,
     "passengerClass": ["economy", "business"]
 }

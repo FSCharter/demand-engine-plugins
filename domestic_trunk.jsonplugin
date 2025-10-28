@@ -5,8 +5,8 @@
     "commodityType": "passenger",
     "passengerCountMinimum": 3,
     "passengerCountMaximum": 10,
-    "minimumDistance": 200,
-    "maximumDistance": 1200,
+    "minimumDistance": 400,
+    "maximumDistance": 1500,
     "passengerClass": ["economy", "business"],
     "sameCountry": true
 }

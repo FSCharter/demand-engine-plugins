@@ -10,7 +10,7 @@
     "destinationMaximumWaterRunways": 0,
     "destinationMinimumHardRunways": 1,
     "minimumDistance": 20,
-    "maximumDistance": 150,
+    "maximumDistance": 300,
     "passengerClass": "economy",
     "originCountry": ["PH", "ID", "JP", "GR", "HR", "MH"],
     "destinationCountry": ["PH", "ID", "JP", "GR", "HR", "MH"],

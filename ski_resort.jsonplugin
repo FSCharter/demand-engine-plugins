@@ -8,7 +8,7 @@
     "originAirportType": ["large", "medium"],
     "destinationAirportType": "small",
     "minimumDistance": 50,
-    "maximumDistance": 300,
+    "maximumDistance": 500,
     "passengerClass": ["economy", "business", "first"],
     "originCountry": ["US", "CA", "FR", "CH", "AT", "IT", "JP"],
     "destinationCountry": ["US", "CA", "FR", "CH", "AT", "IT", "JP"],
