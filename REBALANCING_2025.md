@@ -34,7 +34,7 @@ This rebalancing shifts from airport-type-based plugins to **distance-based plug
 | Plugin | Weight | % | Pax | Distance | Purpose |
 |--------|--------|---|-----|----------|---------|
 | **Long Haul** | 350 | 47.3% | 1-6 | 300+ nm | Jets, major routes |
-| **Medium Haul** | 150 | 20.3% | 2-6 | 100-300 nm | Turboprops, regional |
+| **Medium Haul** | 150 | 20.3% | 1-6 | 100-300 nm | Turboprops, regional |
 | **Short Haul** | 120 | 16.2% | 1-4 | 30-100 nm | Light twins |
 | **Executive Group Charter** | 60 | 8.1% | 8-15 | 200-2000 nm | Large biz jets |
 | **Regional Island Network** | 60 | 8.1% | 2-6 | 100-2500 nm | Island feeders |
