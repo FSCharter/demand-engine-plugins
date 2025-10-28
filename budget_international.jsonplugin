@@ -3,8 +3,8 @@
 // Weight: 34
 {
     "commodityType": "passenger",
-    "passengerCountMinimum": 80,
-    "passengerCountMaximum": 180,
+    "passengerCountMinimum": 4,
+    "passengerCountMaximum": 12,
     "minimumDistance": 500,
     "maximumDistance": 2500,
     "passengerClass": ["economy", "business"],

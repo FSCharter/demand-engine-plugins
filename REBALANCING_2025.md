@@ -261,13 +261,15 @@ After initial distance-based rebalancing, the passenger class distribution was s
 
 To compensate for Executive Group Charter being correctly set to [F] only, three economy-heavy plugins were added:
 
-| Plugin | Weight | Classes | Pax | Distance | Purpose |
-|--------|--------|---------|-----|----------|---------|
-| **regional_connector** | 70 | E/B | 30-70 | 100-400nm | Regional airlines feeding hubs (E-Jets, CRJs) |
-| **domestic_trunk** | 60 | E/B | 50-150 | 200-1200nm | Major domestic routes (737s, A320s on LAX-JFK type routes) |
-| **budget_international** | 34 | E/B | 80-180 | 500-2500nm | Low-cost carriers (Ryanair, EasyJet, Southwest international) |
+| Plugin | Weight | Classes | Pax (Group Size) | Distance | Purpose |
+|--------|--------|---------|------------------|----------|---------|
+| **regional_connector** | 70 | E/B | 2-8 | 100-400nm | Regional airlines feeding hubs (traveling groups) |
+| **domestic_trunk** | 60 | E/B | 3-10 | 200-1200nm | Major domestic routes (traveling groups) |
+| **budget_international** | 34 | E/B | 4-12 | 500-2500nm | Low-cost carriers (traveling groups) |
 
 **Total Added Weight: 164**
+
+**CRITICAL CLARIFICATION**: Passenger counts represent **traveling group sizes**, NOT plane capacity. The demand engine has a hard limit of 12 passengers per group (CommodityValidationFilter.cs:12). These plugins generate traveling groups (families, business teams, tour groups) that will be combined onto planes by the matching system.
 
 These plugins represent the most common real-world commercial aviation scenarios that were under-represented in the original distance-based system.
 
