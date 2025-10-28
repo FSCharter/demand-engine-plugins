@@ -1,6 +1,6 @@
 // Id: city_hopper
 // Name: City Hopper
-// Weight: 100
+// Weight: 0 [DISABLED - Replaced by distance-based plugins]
 {
     "commodityType": "passenger",
     "passengerCountMinimum": 1,

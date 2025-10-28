@@ -1,6 +1,6 @@
 // Id: corporate
 // Name: Corporate Airports
-// Weight: 80
+// Weight: 50
 {
     "commodityType": "passenger",
     "originHasCorporateUse": true,
