@@ -269,7 +269,17 @@ To compensate for Executive Group Charter being correctly set to [F] only, three
 
 **Total Added Weight: 164**
 
-**CRITICAL CLARIFICATION**: Passenger counts represent **traveling group sizes**, NOT plane capacity. The demand engine has a hard limit of 12 passengers per group (CommodityValidationFilter.cs:12). These plugins generate traveling groups (families, business teams, tour groups) that will be combined onto planes by the matching system.
+**CRITICAL CLARIFICATIONS**:
+
+1. **Passenger counts = traveling group sizes**, NOT plane capacity
+   - Hard limit: 12 passengers per group (CommodityValidationFilter.cs:12)
+   - Groups are combined onto planes by the matching system
+
+2. **Class distribution calculation must account for group sizes**
+   - Each plugin generation picks ONE class (60/25/15 weighted)
+   - But different plugins generate different passenger counts
+   - True distribution = weight × avg_passenger_count × class_probability
+   - Example: Executive (weight 25, avg 10 pax) has 10x impact vs Short Haul (weight 95, avg 2.5 pax)
 
 These plugins represent the most common real-world commercial aviation scenarios that were under-represented in the original distance-based system.
 
@@ -285,6 +295,37 @@ These plugins represent the most common real-world commercial aviation scenarios
 
 ---
 
+## Final Distribution Correction (Group Size Accounting)
+
+### Discovery
+
+Initial class distribution calculation was **fundamentally wrong** - it only considered plugin weights, not passenger counts.
+
+**Wrong calculation**: Plugin weight determines class probability
+**Correct calculation**: weight × avg_passenger_count × class_probability
+
+### Impact
+
+Executive Group Charter (weight 25, avg 10 pax) generates **250 passenger-units** of first class per cycle, while Long Haul (weight 298, avg 3.5 pax) generates **1,043 passenger-units** split 60/25/15. The high passenger count in Executive overwhelmed the distribution.
+
+### Solution
+
+Reduced Executive Group Charter: **25 → 15 weight**
+
+**Final Distribution (Accounting for Group Sizes)**:
+
+| Class | Target | Achieved | Delta | Status |
+|-------|--------|----------|-------|--------|
+| Economy | 60.00% | **60.23%** | +0.23% | ✅ |
+| Business | 25.00% | **24.86%** | -0.14% | ✅ |
+| First | 15.00% | **14.91%** | -0.09% | ✅ |
+
+**Total Active Weight: 884** (was 894)
+
+**Result: All within ±0.25% - EXCELLENT**
+
+---
+
 **Date**: October 2025
 **Branch**: feature/distance-based-rebalancing
-**Status**: Ready for testing (distance-based + class distribution fixes applied)
+**Status**: Ready for testing (distance-based + class distribution fixes + group size accounting applied)

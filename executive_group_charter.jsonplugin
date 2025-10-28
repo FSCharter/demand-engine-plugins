@@ -1,6 +1,6 @@
 // Id: executive_group_charter
 // Name: Executive Group Charter
-// Weight: 25
+// Weight: 15
 {
     "commodityType": "passenger",
     "originHasCorporateUse": true,
