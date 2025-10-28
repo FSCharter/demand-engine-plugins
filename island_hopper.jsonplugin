@@ -1,6 +1,6 @@
 // Id: island_hopper
 // Name: Island Hopping Service
-// Weight: 25
+// Weight: 15
 {
     "commodityType": "passenger",
     "passengerCountMinimum": 2,
@@ -10,12 +10,11 @@
     "destinationMaximumWaterRunways": 0,
     "destinationMinimumHardRunways": 1,
     "minimumDistance": 20,
-    "maximumDistance": 150,
+    "maximumDistance": 300,
     "passengerClass": "economy",
-    "originCountry": ["PH", "ID", "JP", "GR", "HR", "FJ", "MH"],
-    "destinationCountry": ["PH", "ID", "JP", "GR", "HR", "FJ", "MH"],
+    "originCountry": ["PH", "ID", "JP", "GR", "HR", "MH"],
+    "destinationCountry": ["PH", "ID", "JP", "GR", "HR", "MH"],
     "sameCountry": true,
     "randomNextHop": true,
-    "timeToLive": 2,
-    "pluginCommodityLimit": 30
+    "timeToLive": 2
 }
