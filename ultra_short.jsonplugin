@@ -7,5 +7,5 @@
     "passengerCountMaximum": 2,
     "minimumDistance": 1,
     "maximumDistance": 10,
-    "passengerClass": ["economy"]
+    "passengerClass": ["economy", "first"]
 }
