@@ -1,6 +1,6 @@
 // Id: regional_island_network
 // Name: Regional Island Network
-// Weight: 60
+// Weight: 50
 {
     "commodityType": "passenger",
     "passengerCountMinimum": 2,

@@ -1,6 +1,6 @@
 // Id: executive_group_charter
 // Name: Executive Group Charter
-// Weight: 60
+// Weight: 25
 {
     "commodityType": "passenger",
     "originHasCorporateUse": true,
@@ -9,6 +9,6 @@
     "passengerCountMaximum": 12,
     "minimumDistance": 200,
     "maximumDistance": 2000,
-    "passengerClass": ["first"],
+    "passengerClass": ["economy", "business", "first"],
     "ignoreCapacityLimits": true
 }
