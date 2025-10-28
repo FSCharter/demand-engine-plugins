@@ -1,6 +1,6 @@
 // Id: metropolitan
 // Name: Metropolitan Network
-// Weight: 500
+// Weight: 0 [DISABLED - Replaced by distance-based plugins]
 {
     "commodityType": "passenger",
     "passengerCountMinimum": 1,

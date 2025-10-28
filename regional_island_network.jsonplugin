@@ -1,0 +1,14 @@
+// Id: regional_island_network
+// Name: Regional Island Network
+// Weight: 60
+{
+    "commodityType": "passenger",
+    "passengerCountMinimum": 2,
+    "passengerCountMaximum": 6,
+    "originCountry": ["PH", "ID", "JP", "GR", "HR", "FJ", "MH", "MV", "SC"],
+    "destinationCountry": ["PH", "ID", "JP", "GR", "HR", "FJ", "MH", "MV", "SC", "AU", "NZ", "SG", "TH", "IT", "ES", "FR"],
+    "sameCountry": false,
+    "minimumDistance": 100,
+    "maximumDistance": 2500,
+    "passengerClass": ["economy", "business"]
+}

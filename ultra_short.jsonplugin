@@ -1,0 +1,11 @@
+// Id: ultra_short
+// Name: Ultra-Short Haul
+// Weight: 15
+{
+    "commodityType": "passenger",
+    "passengerCountMinimum": 1,
+    "passengerCountMaximum": 2,
+    "minimumDistance": 1,
+    "maximumDistance": 10,
+    "passengerClass": ["economy"]
+}

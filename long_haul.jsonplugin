@@ -1,0 +1,10 @@
+// Id: long_haul
+// Name: Long Haul
+// Weight: 350
+{
+    "commodityType": "passenger",
+    "passengerCountMinimum": 1,
+    "passengerCountMaximum": 6,
+    "minimumDistance": 300,
+    "passengerClass": ["economy", "first", "business"]
+}
