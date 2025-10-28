@@ -1,0 +1,12 @@
+// Id: domestic_trunk
+// Name: Domestic Trunk Routes
+// Weight: 60
+{
+    "commodityType": "passenger",
+    "passengerCountMinimum": 50,
+    "passengerCountMaximum": 150,
+    "minimumDistance": 200,
+    "maximumDistance": 1200,
+    "passengerClass": ["economy", "business"],
+    "sameCountry": true
+}

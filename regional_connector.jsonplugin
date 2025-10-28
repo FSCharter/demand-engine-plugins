@@ -1,0 +1,11 @@
+// Id: regional_connector
+// Name: Regional Connector
+// Weight: 70
+{
+    "commodityType": "passenger",
+    "passengerCountMinimum": 30,
+    "passengerCountMaximum": 70,
+    "minimumDistance": 100,
+    "maximumDistance": 400,
+    "passengerClass": ["economy", "business"]
+}

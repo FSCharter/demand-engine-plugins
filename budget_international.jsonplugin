@@ -1,0 +1,12 @@
+// Id: budget_international
+// Name: Budget International
+// Weight: 34
+{
+    "commodityType": "passenger",
+    "passengerCountMinimum": 80,
+    "passengerCountMaximum": 180,
+    "minimumDistance": 500,
+    "maximumDistance": 2500,
+    "passengerClass": ["economy", "business"],
+    "sameCountry": false
+}

@@ -223,7 +223,7 @@ After initial distance-based rebalancing, the passenger class distribution was s
 |--------|--------|-------|-----------|
 | **medium_haul** | [E/B] 150 | [E/B/F] 123 | Wealthy passengers fly 100-300nm routes (London-Athens, NYC-Denver) |
 | **ski_resort** | [E/B] 30 | [E/B/F] 25 | Luxury ski resorts exist (Aspen, Courchevel, St. Moritz) |
-| **executive_group_charter** | [F] 60 | [E/B/F] 25 | Not all group charters are first class (sports teams, wedding parties, corporate retreats) |
+| **executive_group_charter** | [F] 60 | [F] 25 | Full business jet charters (Challenger 350, Legacy 500) - first class only |
 | **helicharter** | [E] 20 | [B/F] 15 | Helicopter charters are NEVER economy - premium service only |
 | **corporate** | [F] 50 | [F] 19 | Small business jets stay first-only, but reduced weight to fix distribution |
 | **water_taxi** | [E/F] 20 | [E/B] 10 | Consistency with other regional plugins |
@@ -236,15 +236,17 @@ After initial distance-based rebalancing, the passenger class distribution was s
 
 ### Final Distribution
 
-**Total Active Weight: 730** (unchanged)
+**Total Active Weight: 894** (was 730, increased to compensate for Executive Group Charter being first-only)
 
 | Class | Target | Achieved | Delta |
 |-------|--------|----------|-------|
-| Economy | 60.0% | 59.8% | -0.2% ✅ |
-| Business | 25.0% | 24.9% | -0.1% ✅ |
-| First | 15.0% | 15.3% | +0.3% ✅ |
+| Economy | 60.0% | 60.00% | 0.0% ✅ |
+| Business | 25.0% | 24.99% | -0.01% ✅ |
+| First | 15.0% | 15.01% | +0.01% ✅ |
 
-**Result: ±0.3% accuracy - excellent balance achieved!**
+**Result: ±0.01% accuracy - perfect balance achieved!**
+
+**Critical Fix Applied:** Executive Group Charter was initially changed to [E/B/F] to hit target distribution, but this was narratively incorrect (it's specifically for full business jet charters). Changed back to [F] only and added three economy-heavy plugins to compensate.
 
 ### Key Benefits
 
@@ -255,14 +257,29 @@ After initial distance-based rebalancing, the passenger class distribution was s
 5. **Business Class Fix:** Increased from 21.9% to 24.9% (closer to 25% target)
 6. **Premium Service Fix:** Helicopters now correctly positioned as business/first-class service
 
+### New Economy-Heavy Plugins Added
+
+To compensate for Executive Group Charter being correctly set to [F] only, three economy-heavy plugins were added:
+
+| Plugin | Weight | Classes | Pax | Distance | Purpose |
+|--------|--------|---------|-----|----------|---------|
+| **regional_connector** | 70 | E/B | 30-70 | 100-400nm | Regional airlines feeding hubs (E-Jets, CRJs) |
+| **domestic_trunk** | 60 | E/B | 50-150 | 200-1200nm | Major domestic routes (737s, A320s on LAX-JFK type routes) |
+| **budget_international** | 34 | E/B | 80-180 | 500-2500nm | Low-cost carriers (Ryanair, EasyJet, Southwest international) |
+
+**Total Added Weight: 164**
+
+These plugins represent the most common real-world commercial aviation scenarios that were under-represented in the original distance-based system.
+
 ### Real-World Alignment
 
 - ✅ First-class passengers DO ski at luxury resorts (Aspen costs $15k/week)
 - ✅ Wealthy passengers DO fly medium haul (Emirates first class on 3-hour routes)
-- ✅ Group charters AREN'T always first class (sports teams, corporate retreats)
+- ✅ Executive group charters ARE first class only (full business jet charters for C-suite)
 - ✅ Helicopter charters are NEVER economy (they're executive transport)
 - ✅ Military flights are economy-only (service personnel)
 - ✅ Corporate jets stay first-only (C-suite transport)
+- ✅ Regional connectors and trunk routes dominate real-world traffic (added with correct weight)
 
 ---
 
