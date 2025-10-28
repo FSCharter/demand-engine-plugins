@@ -1,6 +1,6 @@
 // Id: ski_resort
 // Name: Ski Resort Shuttle
-// Weight: 25
+// Weight: 0
 {
     "commodityType": "passenger",
     "passengerCountMinimum": 2,
