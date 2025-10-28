@@ -1,6 +1,6 @@
 // Id: long_haul
 // Name: Long Haul
-// Weight: 120
+// Weight: 150
 {
     "commodityType": "passenger",
     "passengerCountMinimum": 1,
