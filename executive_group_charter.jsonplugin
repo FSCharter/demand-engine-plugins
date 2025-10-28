@@ -6,9 +6,9 @@
     "originHasCorporateUse": true,
     "destinationHasCorporateUse": true,
     "passengerCountMinimum": 8,
-    "passengerCountMaximum": 15,
+    "passengerCountMaximum": 12,
     "minimumDistance": 200,
     "maximumDistance": 2000,
     "passengerClass": ["first"],
-    "pluginCommodityLimit": 25
+    "ignoreCapacityLimits": true
 }

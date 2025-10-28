@@ -29,26 +29,26 @@ This rebalancing shifts from airport-type-based plugins to **distance-based plug
 - **Solution**: Executive Group Charter (8-15 pax, weight 60)
 - **Expected**: 2-3 full charter opportunities per hour, 75-85% load factor
 
-## New Active Weights (Total: 740)
+## New Active Weights (Total: 730)
 
 | Plugin | Weight | % | Pax | Distance | Purpose |
 |--------|--------|---|-----|----------|---------|
-| **Long Haul** | 350 | 47.3% | 1-6 | 300+ nm | Jets, major routes |
-| **Medium Haul** | 150 | 20.3% | 2-6 | 100-300 nm | Turboprops, regional |
-| **Short Haul** | 120 | 16.2% | 1-4 | 30-100 nm | Light twins |
-| **Executive Group Charter** | 60 | 8.1% | 8-15 | 200-2000 nm | Large biz jets |
-| **Regional Island Network** | 60 | 8.1% | 2-6 | 100-2500 nm | Island feeders |
+| **Long Haul** | 350 | 47.9% | 1-6 | 300+ nm | Jets, major routes |
+| **Medium Haul** | 150 | 20.5% | 1-6 | 100-300 nm | Turboprops, regional |
+| **Short Haul** | 120 | 16.4% | 1-4 | 30-100 nm | Light twins |
+| **Executive Group Charter** | 60 | 8.2% | 8-12 | 200-2000 nm | Large biz jets |
+| **Regional Island Network** | 60 | 8.2% | 2-6 | 100-2500 nm | Island feeders |
 | **Corporate** | 50 | 6.8% | 1-6 | 100-1500 nm | Small biz jets |
 | **Ski Resort** | 30 | 4.1% | 2-6 | 50-300 nm | Seasonal |
-| **Island Hopper** | 25 | 3.4% | 2-4 | 20-150 nm | Multi-hop |
 | **Military Flights** | 25 | 3.4% | 1-6 | 50-6000 nm | Government |
 | **Military Transfers** | 25 | 3.4% | 1-6 | 50-250 nm | Base transfers |
 | **Bush Taxi** | 20 | 2.7% | 1-2 | 5-30 nm | Soft runways |
 | **Water Taxi** | 20 | 2.7% | 1-2 | 5-30 nm | Water runways |
 | **Helicharter** | 20 | 2.7% | 1-4 | 5-100 nm | Helipads |
-| **Ultra-Short** | 15 | 2.0% | 1-2 | 1-10 nm | City shuttles |
+| **Island Hopper** | 15 | 2.1% | 2-4 | 20-150 nm | Multi-hop |
+| **Ultra-Short** | 15 | 2.1% | 1-2 | 1-10 nm | City shuttles |
 
-**TOTAL ACTIVE: 740** (down from 920, but more focused)
+**TOTAL ACTIVE: 730** (down from 920, but more focused)
 
 ## Disabled Plugins
 
@@ -75,11 +75,12 @@ This rebalancing shifts from airport-type-based plugins to **distance-based plug
 
 ## Modified Plugins
 
-1. **island_hopper.jsonplugin**: 40 → 25 weight, 6 → 4 max pax, TTL 3 → 2, added limit 30
-2. **corporate.jsonplugin**: 80 → 50 weight
-3. **metropolitan.jsonplugin**: 500 → 0 [DISABLED]
-4. **city_hopper.jsonplugin**: 100 → 0 [DISABLED]
-5. **local_airfield.jsonplugin**: 80 → 0 [DISABLED]
+1. **island_hopper.jsonplugin**: 40 → 15 weight, 6 → 4 max pax, TTL 3 → 2, removed FJ from countries, removed pluginCommodityLimit
+2. **executive_group_charter.jsonplugin**: 15 → 12 max pax, added ignoreCapacityLimits, removed pluginCommodityLimit
+3. **corporate.jsonplugin**: 80 → 50 weight
+4. **metropolitan.jsonplugin**: 500 → 0 [DISABLED]
+5. **city_hopper.jsonplugin**: 100 → 0 [DISABLED]
+6. **local_airfield.jsonplugin**: 80 → 0 [DISABLED]
 
 ## Aircraft Coverage
 
@@ -137,6 +138,55 @@ If issues arise:
 
 ---
 
+## Critical Fixes Applied (Post-Initial Deployment)
+
+### Issue 1: Database Performance - `pluginCommodityLimit`
+
+**Problem**: Simon identified that `pluginCommodityLimit` causes database performance issues. Every 500ms generation tick requires checking commodity counts across the entire database.
+
+**Fix**: Removed `pluginCommodityLimit` from both plugins:
+- Island Hopper: Removed limit of 30
+- Executive Group Charter: Removed limit of 25
+
+**Rationale**: Trust the built-in geoscore capacity system (origin × 0.8, destination × 0.4). Artificial plugin limits fight the capacity system and cause performance overhead.
+
+### Issue 2: Executive Group Charter Validation Failure
+
+**Problem**: "Passenger group size validation failed" error - corporate airports (low geoscores) cannot support 8-15 passenger groups under normal capacity constraints.
+
+**Fix**:
+- Added `ignoreCapacityLimits: true` to Executive Group Charter
+- Reduced max passengers from 15 to 12 (safer range for Challenger 350)
+
+**Rationale**: Executive charters are premium, low-frequency events that shouldn't be constrained by general capacity rules. This is a special exception that makes logical sense for full aircraft charters.
+
+### Issue 3: Fiji Island Concentration Persistence
+
+**Problem**: Even with reduced weight, Fiji still concentrated 2000+ passengers on single 66nm route due to only 2 high-geoscore airports and `sameCountry: true` restriction.
+
+**Fix**:
+- Removed Fiji (FJ) from Island Hopper country list
+- Reduced weight further: 25 → 15 (from original 40)
+
+**Rationale**: Fiji domestic traffic is better served by Regional Island Network (FJ → AU/NZ/SG/TH international feeders) which provides more realistic traffic patterns. Other archipelagos (Philippines, Indonesia, Japan islands, Greece, Croatia, Marshall Islands) remain served.
+
+### Weight Impact
+
+**Before Fixes**: 740 total weight
+**After Fixes**: 730 total weight (-10)
+
+**Changed Weights**:
+- Island Hopper: 25 → 15 (-10 weight, -1.3%)
+
+**Key Benefits**:
+✅ Eliminates database performance overhead from commodity limit checks
+✅ Fixes Executive Group Charter validation - business jets can now generate 8-12 passenger groups
+✅ Prevents Fiji concentration while maintaining archipelago service
+✅ Trusts geoscore capacity system as designed
+✅ Creates appropriate exception for premium charter events
+
+---
+
 **Date**: October 2025
 **Branch**: feature/distance-based-rebalancing
-**Status**: Ready for testing
+**Status**: Ready for testing (fixes applied)
