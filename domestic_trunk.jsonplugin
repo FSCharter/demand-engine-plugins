@@ -1,6 +1,6 @@
 // Id: domestic_trunk
 // Name: Domestic Trunk Routes
-// Weight: 60
+// Weight: 50
 {
     "commodityType": "passenger",
     "passengerCountMinimum": 3,

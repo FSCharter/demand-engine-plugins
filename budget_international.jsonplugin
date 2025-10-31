@@ -1,6 +1,6 @@
 // Id: budget_international
 // Name: Budget International
-// Weight: 34
+// Weight: 52
 {
     "commodityType": "passenger",
     "passengerCountMinimum": 4,

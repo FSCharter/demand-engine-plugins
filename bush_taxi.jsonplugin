@@ -1,6 +1,6 @@
 // Id: bush_taxi
 // Name: Bush Taxi
-// Weight: 15
+// Weight: 14
 {
     "commodityType": "passenger",
     "passengerCountMinimum": 1,
