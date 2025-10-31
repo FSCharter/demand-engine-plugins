@@ -1,6 +1,6 @@
 // Id: water_taxi
 // Name: Water Taxi
-// Weight: 10
+// Weight: 9
 {
     "commodityType": "passenger",
     "passengerCountMinimum": 1,

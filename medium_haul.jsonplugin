@@ -1,6 +1,6 @@
 // Id: medium_haul
 // Name: Medium Haul
-// Weight: 150
+// Weight: 110
 {
     "commodityType": "passenger",
     "passengerCountMinimum": 1,
