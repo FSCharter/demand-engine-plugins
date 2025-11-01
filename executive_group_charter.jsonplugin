@@ -1,10 +1,40 @@
 // Id: executive_group_charter
 // Name: Executive Group Charter
 // Weight: 60
+// Uses verified business jet capable airports (79 total)
+// See Docs/CORPORATE_EXCLUSIVE_AIRPORTS.md for details
 {
     "commodityType": "passenger",
-    "originHasCorporateUse": true,
-    "destinationHasCorporateUse": true,
+    "originIcao": [
+        "KTEB", "LFPB", "KVNY", "EGLF", "EDFE", "LFMD", "OMAD",
+        "KOPF", "KPDK", "KAPA", "KMMU", "KADS", "KSQL", "KPAO",
+        "KLVK", "KCRQ", "KHWO", "KTMB", "KFRG", "KAPF", "KORL",
+        "KRAL", "KSEE", "KDTO", "KSGR", "KCMA", "KBED", "KPWK",
+        "KHHR", "KRBD", "CYOO", "CYBW", "CZBB",
+        "EGKB", "EGTK", "EGBJ", "EGSC", "EGWU", "EGTB", "EGTC",
+        "EGNR", "EGSG", "LFPT", "LFLY", "ENKJ", "EFSI", "EKRK",
+        "LIPN", "LOWZ", "EDMO", "LECU", "LELL", "LIMB", "LSGL",
+        "LSZS", "LOAN", "LOAV", "EPBC", "LKLT", "UUMO", "EHLE",
+        "EIWT", "UUBM",
+        "SBJH", "MMJC", "FBOR", "FAWB", "FASX", "VOHY", "VIDD",
+        "SBMT", "SADF", "SKGY", "HEAZ", "FAGC", "YPJT", "YBAF",
+        "NZAR", "NZMS"
+    ],
+    "destinationIcao": [
+        "KTEB", "LFPB", "KVNY", "EGLF", "EDFE", "LFMD", "OMAD",
+        "KOPF", "KPDK", "KAPA", "KMMU", "KADS", "KSQL", "KPAO",
+        "KLVK", "KCRQ", "KHWO", "KTMB", "KFRG", "KAPF", "KORL",
+        "KRAL", "KSEE", "KDTO", "KSGR", "KCMA", "KBED", "KPWK",
+        "KHHR", "KRBD", "CYOO", "CYBW", "CZBB",
+        "EGKB", "EGTK", "EGBJ", "EGSC", "EGWU", "EGTB", "EGTC",
+        "EGNR", "EGSG", "LFPT", "LFLY", "ENKJ", "EFSI", "EKRK",
+        "LIPN", "LOWZ", "EDMO", "LECU", "LELL", "LIMB", "LSGL",
+        "LSZS", "LOAN", "LOAV", "EPBC", "LKLT", "UUMO", "EHLE",
+        "EIWT", "UUBM",
+        "SBJH", "MMJC", "FBOR", "FAWB", "FASX", "VOHY", "VIDD",
+        "SBMT", "SADF", "SKGY", "HEAZ", "FAGC", "YPJT", "YBAF",
+        "NZAR", "NZMS"
+    ],
     "passengerCountMinimum": 8,
     "passengerCountMaximum": 15,
     "minimumDistance": 200,
