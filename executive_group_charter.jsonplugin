@@ -1,6 +1,6 @@
 // Id: executive_group_charter
 // Name: Executive Group Charter
-// Weight: 17
+// Weight: 21
 // Uses verified business jet capable airports (79 total)
 // See Docs/CORPORATE_EXCLUSIVE_AIRPORTS.md for details
 {
@@ -39,6 +39,5 @@
     "passengerCountMaximum": 12,
     "minimumDistance": 200,
     "maximumDistance": 2000,
-    "passengerClass": ["first"],
-    "ignoreCapacityLimits": true
+    "passengerClass": ["first"]
 }
