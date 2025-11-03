@@ -38,6 +38,6 @@
     "passengerCountMinimum": 8,
     "passengerCountMaximum": 12,
     "minimumDistance": 200,
-    "maximumDistance": 2000,
+    "maximumDistance": 3000,
     "passengerClass": ["first"]
 }
