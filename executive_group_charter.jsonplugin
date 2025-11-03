@@ -1,6 +1,6 @@
 // Id: executive_group_charter
 // Name: Executive Group Charter
-// Weight: 60
+// Weight: 17
 // Uses verified business jet capable airports (79 total)
 // See Docs/CORPORATE_EXCLUSIVE_AIRPORTS.md for details
 {
@@ -36,9 +36,9 @@
         "NZAR", "NZMS"
     ],
     "passengerCountMinimum": 8,
-    "passengerCountMaximum": 15,
+    "passengerCountMaximum": 12,
     "minimumDistance": 200,
     "maximumDistance": 2000,
     "passengerClass": ["first"],
-    "pluginCommodityLimit": 25
+    "ignoreCapacityLimits": true
 }

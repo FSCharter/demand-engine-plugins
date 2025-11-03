@@ -1,6 +1,6 @@
 // Id: ultra_short
 // Name: Ultra-Short Haul
-// Weight: 15
+// Weight: 0
 {
     "commodityType": "passenger",
     "passengerCountMinimum": 1,

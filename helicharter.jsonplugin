@@ -1,13 +1,13 @@
 // Id: helicharter
 // Name: Helicopter Only Charters
-// Weight: 20
+// Weight: 14
 {
     "commodityType": "passenger",
     "passengerCountMinimum": 1,
     "passengerCountMaximum": 4,
     "minimumDistance": 5,
     "maximumDistance": 100,
-    "passengerClass": "economy",
+    "passengerClass": ["business", "first"],
     "originMaximumHardRunways": 0,
     "originMaximumWaterRunways": 0,
     "originMaximumSoftRunways": 0,

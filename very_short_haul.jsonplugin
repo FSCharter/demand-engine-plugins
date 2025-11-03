@@ -1,0 +1,11 @@
+// Id: very_short_haul
+// Name: Very Short Haul
+// Weight: 70
+{
+    "commodityType": "passenger",
+    "passengerCountMinimum": 1,
+    "passengerCountMaximum": 4,
+    "minimumDistance": 10,
+    "maximumDistance": 270,
+    "passengerClass": ["economy", "business", "first"]
+}

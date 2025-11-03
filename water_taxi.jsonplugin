@@ -1,6 +1,6 @@
 // Id: water_taxi
 // Name: Water Taxi
-// Weight: 20
+// Weight: 9
 {
     "commodityType": "passenger",
     "passengerCountMinimum": 1,
@@ -9,7 +9,7 @@
     "destinationAirportType": "small",
     "minimumDistance": 5,
     "maximumDistance": 30,
-    "passengerClass": [ "economy", "first" ],
+    "passengerClass": ["economy", "business"],
     "originMaximumHardRunways": 0,
     "originMaximumSoftRunways": 0,
     "originMaximumHelipads": 0,

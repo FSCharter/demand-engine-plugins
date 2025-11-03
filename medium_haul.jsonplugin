@@ -1,11 +1,11 @@
 // Id: medium_haul
 // Name: Medium Haul
-// Weight: 150
+// Weight: 110
 {
     "commodityType": "passenger",
     "passengerCountMinimum": 1,
     "passengerCountMaximum": 6,
-    "minimumDistance": 100,
-    "maximumDistance": 300,
-    "passengerClass": ["economy", "business"]
+    "minimumDistance": 800,
+    "maximumDistance": 2200,
+    "passengerClass": ["economy", "business", "first"]
 }
