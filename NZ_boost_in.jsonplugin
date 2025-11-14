@@ -1,0 +1,13 @@
+// Id: NZ_boost_in
+// Name: NZ Boost Inbound
+// Weight: 15
+{
+    "commodityType": "passenger",
+    "passengerCountMinimum": 1,
+    "passengerCountMaximum": 5,
+    "passengerClass": ["economy", "business", "first"],
+    "originAirportType": ["large", "medium", "small"],
+    "destinationCountry": ["NZ"],
+    "destinationAirportType": ["large", "medium", "small"],
+    "minimumDistance": 400
+}
