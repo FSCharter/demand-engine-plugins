@@ -13,7 +13,7 @@
         "EGNR", "EGSG", "LFPT", "LFLY", "ENKJ", "EFSI", "EKRK",
         "LIPN", "LOWZ", "EDMO", "LEVS", "LELL", "LIMB", "LSGL",
         "LSZS", "LOAN", "LOAV", "EPBC", "LKLT", "UUMO", "EHLE",
-        "EIWT", "UUBM",
+        "EIWT",
         "SBJH", "MMJC", "FBOR", "FAWB", "FASX", "VOHY", "VIDD",
         "SBMT", "SADF", "SKGY", "HEAZ", "FAGC", "YPJT", "YBAF",
         "NZAR", "NZMS"
@@ -28,7 +28,7 @@
         "EGNR", "EGSG", "LFPT", "LFLY", "ENKJ", "EFSI", "EKRK",
         "LIPN", "LOWZ", "EDMO", "LEVS", "LELL", "LIMB", "LSGL",
         "LSZS", "LOAN", "LOAV", "EPBC", "LKLT", "UUMO", "EHLE",
-        "EIWT", "UUBM",
+        "EIWT",
         "SBJH", "MMJC", "FBOR", "FAWB", "FASX", "VOHY", "VIDD",
         "SBMT", "SADF", "SKGY", "HEAZ", "FAGC", "YPJT", "YBAF",
         "NZAR", "NZMS"
