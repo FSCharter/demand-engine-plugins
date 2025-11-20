@@ -1,8 +1,6 @@
 // Id: corporate
 // Name: Corporate Airports
 // Weight: 8
-// Uses verified business jet capable airports (79 total)
-// See Docs/CORPORATE_EXCLUSIVE_AIRPORTS.md for details
 {
     "commodityType": "passenger",
     "originIcao": [
@@ -13,9 +11,9 @@
         "KHHR", "KRBD", "KRHV", "CYOO", "CYBW", "CZBB",
         "EGKB", "EGTK", "EGBJ", "EGSC", "EGWU", "EGTB", "EGTC",
         "EGNR", "EGSG", "LFPT", "LFLY", "LFMD", "LFTZ", "LFMV", "ENKJ", "EFSI", "EKRK",
-        "LIPN", "LOWZ", "EDMO", "LECU", "LELL", "LIMB", "LSGL",
+        "LIPN", "LOWZ", "EDMO", "LEVS", "LELL", "LIMB", "LSGL",
         "LSZS", "LOAN", "LOAV", "EPBC", "LKLT", "UUMO", "EHLE",
-        "EIWT", "UUBM",
+        "EIWT",
         "SBJH", "MMJC", "FBOR", "FAWB", "FASX", "VOHY", "VIDD",
         "SBMT", "SADF", "SKGY", "HEAZ", "FAGC", "YPJT", "YBAF",
         "NZAR", "NZMS"
@@ -28,9 +26,9 @@
         "KHHR", "KRBD", "KRHV", "CYOO", "CYBW", "CZBB",
         "EGKB", "EGTK", "EGBJ", "EGSC", "EGWU", "EGTB", "EGTC",
         "EGNR", "EGSG", "LFPT", "LFLY", "LFMD", "LFTZ", "LFMV", "ENKJ", "EFSI", "EKRK",
-        "LIPN", "LOWZ", "EDMO", "LECU", "LELL", "LIMB", "LSGL",
+        "LIPN", "LOWZ", "EDMO", "LEVS", "LELL", "LIMB", "LSGL",
         "LSZS", "LOAN", "LOAV", "EPBC", "LKLT", "UUMO", "EHLE",
-        "EIWT", "UUBM",
+        "EIWT",
         "SBJH", "MMJC", "FBOR", "FAWB", "FASX", "VOHY", "VIDD",
         "SBMT", "SADF", "SKGY", "HEAZ", "FAGC", "YPJT", "YBAF",
         "NZAR", "NZMS"
