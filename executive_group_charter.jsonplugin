@@ -1,8 +1,6 @@
 // Id: executive_group_charter
 // Name: Executive Group Charter
 // Weight: 21
-// Uses verified business jet capable airports (79 total)
-// See Docs/CORPORATE_EXCLUSIVE_AIRPORTS.md for details
 {
     "commodityType": "passenger",
     "originIcao": [
