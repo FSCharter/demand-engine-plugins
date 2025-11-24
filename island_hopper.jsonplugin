@@ -1,6 +1,6 @@
 // Id: island_hopper
 // Name: Island Hopping Service
-// Weight: 14
+// Weight: 20
 {
     "commodityType": "passenger",
     "passengerCountMinimum": 2,

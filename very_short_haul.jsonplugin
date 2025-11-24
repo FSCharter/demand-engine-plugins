@@ -1,6 +1,6 @@
 // Id: very_short_haul
 // Name: Very Short Haul
-// Weight: 70
+// Weight: 99
 {
     "commodityType": "passenger",
     "passengerCountMinimum": 1,

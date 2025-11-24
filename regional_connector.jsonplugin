@@ -1,6 +1,6 @@
 // Id: regional_connector
 // Name: Regional Connector
-// Weight: 63
+// Weight: 89
 {
     "commodityType": "passenger",
     "passengerCountMinimum": 2,

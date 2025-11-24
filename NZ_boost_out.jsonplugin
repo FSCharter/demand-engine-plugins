@@ -1,6 +1,6 @@
 // Id: NZ_boost_out
 // Name: NZ Boost Outbound
-// Weight: 15
+// Weight: 21
 {
     "commodityType": "passenger",
     "passengerCountMinimum": 1,

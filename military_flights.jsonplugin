@@ -1,6 +1,6 @@
 // Id: military_flights
 // Name: Military Flights
-// Weight: 25
+// Weight: 35
 {
     "commodityType": "passenger",
     "passengerCountMinimum": 1,
