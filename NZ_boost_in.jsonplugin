@@ -1,6 +1,6 @@
 // Id: NZ_boost_in
 // Name: NZ Boost Inbound
-// Weight: 15
+// Weight: 21
 {
     "commodityType": "passenger",
     "passengerCountMinimum": 1,

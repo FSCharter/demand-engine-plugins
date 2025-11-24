@@ -1,6 +1,6 @@
 // Id: corporate
 // Name: Corporate Airports
-// Weight: 8
+// Weight: 1
 {
     "commodityType": "passenger",
     "originIcao": [

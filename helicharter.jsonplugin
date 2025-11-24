@@ -1,6 +1,6 @@
 // Id: helicharter
 // Name: Helicopter Only Charters
-// Weight: 14
+// Weight: 20
 {
     "commodityType": "passenger",
     "passengerCountMinimum": 1,
