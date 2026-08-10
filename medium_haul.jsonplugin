@@ -2,7 +2,6 @@
 // Name: Medium Haul
 // Weight: 156
 {
-    "commodityType": "passenger",
     "passengerCountMinimum": 1,
     "passengerCountMaximum": 6,
     "minimumDistance": 800,

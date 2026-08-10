@@ -2,7 +2,6 @@
 // Name: Long Haul
 // Weight: 340
 {
-    "commodityType": "passenger",
     "passengerCountMinimum": 1,
     "passengerCountMaximum": 6,
     "minimumDistance": 2200,

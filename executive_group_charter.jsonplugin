@@ -2,7 +2,6 @@
 // Name: Executive Group Charter
 // Weight: 1
 {
-    "commodityType": "passenger",
     "originIcao": [
         "KTEB", "LFPB", "KVNY", "EGLF", "EDFE", "OMAD",
         "KOPF", "KPDK", "KAPA", "KMMU", "KADS", "KSQL", "KPAO",
