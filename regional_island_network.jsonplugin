@@ -2,7 +2,6 @@
 // Name: Regional Island Network
 // Weight: 64
 {
-    "commodityType": "passenger",
     "passengerCountMinimum": 2,
     "passengerCountMaximum": 6,
     "originCountry": ["PH", "ID", "JP", "GR", "HR", "FJ", "MH", "MV", "SC"],

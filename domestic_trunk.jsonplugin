@@ -2,7 +2,6 @@
 // Name: Domestic Trunk Routes
 // Weight: 71
 {
-    "commodityType": "passenger",
     "passengerCountMinimum": 3,
     "passengerCountMaximum": 10,
     "minimumDistance": 400,

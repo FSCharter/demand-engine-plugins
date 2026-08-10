@@ -2,7 +2,6 @@
 // Name: Helicopter Only Charters
 // Weight: 20
 {
-    "commodityType": "passenger",
     "passengerCountMinimum": 1,
     "passengerCountMaximum": 4,
     "minimumDistance": 5,

@@ -2,7 +2,6 @@
 // Name: Military Flights
 // Weight: 35
 {
-    "commodityType": "passenger",
     "passengerCountMinimum": 1,
     "passengerCountMaximum": 6,
     "minimumDistance": 50,

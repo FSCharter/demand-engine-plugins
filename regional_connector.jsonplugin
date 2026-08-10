@@ -2,7 +2,6 @@
 // Name: Regional Connector
 // Weight: 89
 {
-    "commodityType": "passenger",
     "passengerCountMinimum": 2,
     "passengerCountMaximum": 8,
     "minimumDistance": 100,

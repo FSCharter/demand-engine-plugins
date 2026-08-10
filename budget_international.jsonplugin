@@ -2,7 +2,6 @@
 // Name: Budget International
 // Weight: 74
 {
-    "commodityType": "passenger",
     "passengerCountMinimum": 4,
     "passengerCountMaximum": 12,
     "minimumDistance": 800,

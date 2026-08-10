@@ -2,7 +2,6 @@
 // Name: Water Taxi
 // Weight: 13
 {
-    "commodityType": "passenger",
     "passengerCountMinimum": 1,
     "passengerCountMaximum": 2,
     "originAirportType": "small",
